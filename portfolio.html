@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APJ Civil Solutions - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="images/apj-logo.png" alt="APJ Civil Solutions Logo" width="100" height="70" />
+                <span class="logo-text">APJ Civil Solutions</span>
+            </div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-page">
+        <div class="container">
+            <h2>Our Portfolio</h2>
+
+            <!-- Project 1 -->
+            <div class="portfolio-item">
+                <div class="carousel" id="carousel1">
+                    <button class="carousel-button prev" onclick="changeSlide('carousel1', -1)" aria-label="Previous slide">❮</button>
+                    <div class="carousel-inner">
+                        <div class="carousel-slide"><img src="images/iccc-1.jpeg" alt="Office 1"></div>
+                        <div class="carousel-slide"><img src="images/iccc-2.jpeg" alt="Office 2"></div>
+                        <div class="carousel-slide"><img src="images/iccc-3.jpeg" alt="Office 3"></div>
+                        <div class="carousel-slide"><img src="images/iccc-4.jpeg" alt="Office 4"></div>
+                        <div class="carousel-slide"><img src="images/iccc-5.jpeg" alt="Office 5"></div>
+                    </div>
+                    <button class="carousel-button next" onclick="changeSlide('carousel1', 1)" aria-label="Next slide">❯</button>
+                </div>
+                <div class="portfolio-details">
+                    <h3>ICCC (Integrated Command and Control Center) Building</h3>
+                    <p><strong>Location:</strong> Muzaffarpur</p>
+                    <p><strong>Year:</strong> 2024</p>
+                    <p><strong>Description:</strong>  Execution of a critical infrastructure project for the Muzaffarpur Smart City initiative, demanding precision in both civil and advanced MEP installations.</p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="portfolio-item">
+                <div class="carousel" id="carousel2">
+                    <button class="carousel-button prev" onclick="changeSlide('carousel2', -1)" aria-label="Previous slide">❮</button>
+                    <div class="carousel-inner">
+                        <div class="carousel-slide"><img src="images/govt-poly-1.jpeg" alt="Govt Polytechnic 1"></div>
+                        <div class="carousel-slide"><img src="images/govt-poly-2.jpeg" alt="Govt Polytechnic 2"></div>
+                        <div class="carousel-slide"><img src="images/govt-poly-3.jpeg" alt="Govt Polytechnic 3"></div>
+                    </div>
+                    <button class="carousel-button next" onclick="changeSlide('carousel2', 1)" aria-label="Next slide">❯</button>
+                </div>
+                <div class="portfolio-details">
+                    <h3>Government Polytechnic Building</h3>
+                    <p><strong>Location:</strong> Muzzaffarpur</p>
+                    <p><strong>Year:</strong> 2024</p>
+                    <p><strong>Description:</strong> Successful construction of a multi-story educational facility in Muzaffarpur, ensuring a durable and functional learning environment.</p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <!-- <div class="portfolio-item">
+                <div class="carousel" id="carousel3">
+                    <button class="carousel-button prev" onclick="changeSlide('carousel3', -1)" aria-label="Previous slide">❮</button>
+                    <div class="carousel-inner">
+                        <div class="carousel-slide">🏗️ Image 1</div>
+                        <div class="carousel-slide">🏗️ Image 2</div>
+                        <div class="carousel-slide">🏗️ Image 3</div>
+                    </div>
+                    <button class="carousel-button next" onclick="changeSlide('carousel3', 1)" aria-label="Next slide">❯</button>
+                </div>
+                <div class="portfolio-details">
+                    <h3>Industrial Warehouse</h3>
+                    <p><strong>Location:</strong> Industrial Zone</p>
+                    <p><strong>Year:</strong> 2023</p>
+                    <p><strong>Description:</strong> Large-scale warehouse facility with advanced logistics infrastructure, loading docks, and climate control systems. Total area of 200,000 sq ft designed for maximum operational efficiency.</p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <section class="landmark-contributions">
+        <div class="container">
+            <h2>Landmark Contributions</h2>
+            <div class="landmark-projects">
+                <div class="landmark-item">
+                    <div class="landmark-icon">🏨</div>
+                    <div>
+                        <h4>Radisson Hotel Jamshedpur</h4>
+                        <p>Contributing engineering expertise to the construction of a premium hospitality destination.</p>
+                    </div>
+                </div>
+                <div class="landmark-item">
+                    <div class="landmark-icon">🛍️</div>
+                    <div>
+                        <h4>P&M Mall</h4>
+                        <p class="location-badge">Patna & Jamshedpur</p>
+                        <p>Involvement in the development of major commercial and retail complexes, setting benchmarks for quality and scale in the region.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 APJ Civil Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
